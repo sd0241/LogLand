@@ -37,7 +37,7 @@ NodeJS와 React 기반 사진 다이어리 웹 사이트 AWS의 리소스들을 
 4. ALB는 EKS ADD-ON(ALB-Controller)을 통해 EKS의 Ingress에 연결
 5. EKS Node Group의 NodePort를 통해 내부 POD 통신
 6. EKS Metric-Server를 통해 CloudWatch -> SNS -> Lambda -> Slack으로 내부 리소스 모니터링
-7. WhaTap Agent를 EKS 내부에 설치 -> Whatap으로 리소스 모니터링
+7. WhaTap Agent를 EKS 내부에 설치 -> WhaTap으로 리소스 모니터링
 
 **CI/CD**
 
