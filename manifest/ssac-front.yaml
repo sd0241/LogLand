@@ -1,0 +1,61 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ssac-front
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ssac-front
+      tier: front
+  template:
+    metadata:
+      labels:
+        app: ssac-front
+        tier: front
+    spec:
+      containers:
+        - name: ssac-front
+          image: 107647632326.dkr.ecr.us-east-2.amazonaws.com/ssac-front:29
+          # image: 583483472705.dkr.ecr.ap-northeast-2.amazonaws.com/ssac-front:2
+          resources:
+            limits:
+              cpu: "650m"
+              memory: 1024Mi
+            requests:
+              cpu: "10m"
+              memory: 512Mi
+          ports:
+            - containerPort: 3000
+      affinity:
+        podAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+            - weight: 95
+              podAffinityTerm:
+                labelSelector:
+                  matchExpressions:
+                    - key: tier
+                      operator: In
+                      values:
+                        - back
+                topologyKey: "kubernetes.io/hostname"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ssac-front
+  labels:
+    app: ssac-front
+    tier: front
+spec:
+  type: NodePort # 서비스 타입
+  ports:
+    - port: 443 # 서비스 포트
+      targetPort: 3000 # 타켓, 즉 pod의 포트
+      protocol: TCP
+  selector:
+    app: ssac-front
+
+---
+

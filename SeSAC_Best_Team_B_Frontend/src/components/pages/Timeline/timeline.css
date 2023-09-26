@@ -1,0 +1,50 @@
+/* .vertical_alternating {
+  width: 400px !important;
+}
+.jROSZr {
+}
+.ceHxIo.right,
+.kiSHRt.right {
+  width: 50%;
+}
+.VerticalItemWrapper-sc-1427v1d-1:nth-child(odd) .ceHxIo.right,
+.VerticalItemWrapper-sc-1427v1d-1:nth-child(even) .kiSHRt.right {
+  order: 3;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
+.VerticalItemWrapper-sc-1427v1d-1:nth-child(odd) .kiSHRt.right,
+.VerticalItemWrapper-sc-1427v1d-1:nth-child(even) .ceHxIo.right {
+  order: 1;
+} */
+.cKVAQn {
+  background: #5741a5;
+  max-width: 900px;
+  margin: 0 !important;
+}
+.Wrapper-sc-cif21b-0 {
+}
+.timebg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #5741a5;
+}
+
+.jKxxvP::-webkit-scrollbar-thumb {
+  width: 0px !important;
+  background: #5741a5 !important; /* 스크롤바를 투명하게 만듭니다 */
+}
+.jKxxvP::-webkit-scrollbar-thumb {
+  /* background-color: rgb(0, 127, 255); */
+  outline: #5741a5 !important;
+}
+
+.timehover {
+  width: 300px;
+  height: 300px;
+}
+.jKxxvP::-webkit-scrollbar {
+  width: 0 !important;
+
+}

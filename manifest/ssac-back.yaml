@@ -1,0 +1,56 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ssac-back
+  labels:
+    app: ssac-back
+spec:
+  strategy:
+    type: RollingUpdate
+  minReadySeconds: 20
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ssac-back
+      tier: back
+  template:
+    metadata:
+      labels:
+        app: ssac-back
+        tier: back
+    spec:
+      containers:
+        - name: ssac-back
+          image: 107647632326.dkr.ecr.us-east-2.amazonaws.com/ssac-back:28
+          resources:
+            limits:
+              cpu: "400m"
+              memory: 512Mi
+            requests:
+              cpu: "30m"
+              memory: 256Mi
+          ports:
+            - containerPort: 5000
+      #     volumeMounts:
+      #       - name: persistent-storage
+      #         mountPath: /src
+      # volumes:
+      #   - name: persistent-storage
+      #     persistentVolumeClaim:
+      #       claimName: efs-claim
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ssac-back
+  labels:
+    app: ssac-back
+    tier: back
+spec:
+  type: ClusterIP # 서비스 타입
+  ports:
+    - port: 5000 # 서비스 포트
+      targetPort: 5000 # 타켓, 즉 pod의 포트
+  selector:
+    app: ssac-back

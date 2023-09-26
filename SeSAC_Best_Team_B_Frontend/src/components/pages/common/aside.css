@@ -1,0 +1,84 @@
+/* side bar */
+.aside1 {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #000000e1;
+  }
+  .hamburger-menu {
+    display: none;
+    cursor: pointer;
+  }
+  .hamburger-menu .line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .aside1 a {
+    /* display: flex;
+    justify-content: center;
+    margin-bottom: 0.3vw;
+    position: relative; */
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .aside1 a:first-child {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+  }
+  .aside1 a .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    padding: 10px 0;
+    color: #fff;
+    /* padding: 13px 17px; */
+    clip-path: polygon(20% 10%, 80% 0%, 90% 100%, 0% 100%);
+    transition: transform 0.1s, background-color 0.4s; /* 애니메이션 속도 설정 */
+    border-radius: 30px 30px 30px 20px;
+    margin: 5px auto;
+  }
+  .aside1 a img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .aside1 a > div:hover {
+    background-color: #ffffff10; /* 배경색 변경, 원하는 색상 코드로 교체하세요 */
+  }
+  .aside1 a:nth-child(1) .menu {
+    width: 40px;
+    height: 40px;
+    margin: 30px 0 70px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+  
+    .aside1 {
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.85);
+      z-index: 20001;
+    }
+    .aside1 > div {
+      width: 100px;
+      margin: 0 auto;
+    }
+    .hamburger-menu {
+      display: inline-block;
+    }
+    .header_btn_box {
+      width: auto;
+    }
+    
+  }

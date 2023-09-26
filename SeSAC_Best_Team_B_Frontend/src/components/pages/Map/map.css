@@ -1,0 +1,116 @@
+.gm-style-iw {
+  /* max-width: 1000px !important;
+  min-width: 200px !important;
+  min-height: 200px !important;
+  max-height: 1000px !important;
+  background: #ffffffcb; */
+  padding: 0px !important;
+}
+/* .gm-style-iw-d img {
+  max-width: 200px !important;
+  height: 100% !important;
+  width: 100% !important;
+} */
+.gd {
+  min-width: 200px !important;
+  min-height: 200px !important;
+  max-width: 500px !important;
+  max-height: 500px !important;
+  padding: 0 !important;
+  display: flex;
+}
+.gd .recordvalue {
+  padding: 20px;
+  background-attachment: local;
+  background-image: linear-gradient(to right, white 10px, transparent 10px),
+    linear-gradient(to left, white 10px, transparent 10px),
+    repeating-linear-gradient(
+      white,
+      white 29px,
+      #5f5858 30px,
+      #ccc 31px,
+      white 31px
+    );
+  line-height: 31px;
+  padding: 8px 10px;
+  width: 40%;
+}
+.gd img {
+  max-width: 50%;
+}
+.gd .gdright {
+  padding: 20px;
+  overflow: scroll;
+  width: 60%;
+}
+.gd .gdright .images {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gdright .images img {
+  flex: 1 1 auto;
+}
+.gdright .imgcount {
+  margin: 5px 0;
+}
+
+/* .gm-ui-hover-effect {
+  display: none !important;
+  opacity: 0;
+}
+.gm-style-iw > div {
+  width: 100%;
+}
+.gm-style-iw > div > div {
+  width: 100%;
+}
+.gm-style .gm-style-iw-d::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.gm-style-iw-d {
+  max-height: 230px !important;
+  padding: 0px !important;
+} */
+
+.hamburger-menu2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hamburger-menu2 {
+    display: block;
+  }
+}
+.gm-style > div > div > div > div > img {
+  border-radius: 10px;
+  /* background: #fff; */
+}
+.gm-style > div > div > div > div > div {
+  background: #00000025;
+  border-radius: 10px !important;
+  /* overflow: hidden; */
+}
+@media screen and (max-width: 600px) {
+  .gd img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .gd img {
+    max-width: 100%;
+  }
+  .gd {
+    display: block;
+  }
+  .gd .recordvalue {
+    width: 100%;
+  }
+  .gd .gdright {
+    width: 100%;
+  }
+}

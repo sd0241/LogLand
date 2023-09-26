@@ -1,0 +1,44 @@
+.FirstPage {
+  margin: 0 auto;
+  background: url('../../../../public/images\ \(1\).jpg');
+  background-position: center;
+  height: 100%;
+  min-height: 100vh;
+}
+.box {
+  width: 300px;
+  height: 300px;
+  background: #756969;
+  margin: 0 auto 30px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.boxBG {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(to right, #4bbdda2c, #ff937233);
+  z-index: 10;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.boxBG h3 {
+  line-height: 2;
+  font-family:'Courier New', Courier, monospace
+}
+.boxBG span {
+  color: #000;
+  display: flex;
+  padding-bottom: 10px;
+  flex-direction: row-reverse;
+  font-family:'Times New Roman', Times, serif;
+}
