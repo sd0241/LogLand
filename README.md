@@ -21,12 +21,13 @@ NodeJS와 React 기반 사진 다이어리 웹 사이트 AWS의 리소스들을 
 
 ### 사용 기술 stack
  
- ![image](./test_code1/stack.png)
+ ![image](./manifest/dev.png)
+
 
 
 ### System Architecture  
 
-![image](./test_code1/arc.png)  
+![image](./manifest/arc.gif)  
 
 
 ### 인원 및 역할
