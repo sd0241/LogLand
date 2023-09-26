@@ -34,7 +34,12 @@ NodeJS와 React 기반 사진 다이어리 웹 사이트 AWS의 리소스들을 
 **CI/CD**
 
 ![image](./manifest/cd1.png)  
+
+**CI WorkFlow**
 ![image](./manifest/cd2.png)    
+
+
+**CD WorkFlow**
 ![image](./manifest/cd3.png)  
 
 
