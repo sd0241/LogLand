@@ -14,7 +14,7 @@ metadata:
     alb.ingress.kubernetes.io/subnets: subnet-06f01ed0445776c13, subnet-00b1116512d93b48a
     alb.ingress.kubernetes.io/backend-protocol: "HTTP"
     external-dns.alpha.kubernetes.io/ttl: "100"
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:107647632326:certificate/52e27815-afeb-46b6-b56c-503b3ddf4be4
+    alb.ingress.kubernetes.io/certificate-arn: 
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
 spec:
   tls:
