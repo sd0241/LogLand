@@ -27,24 +27,35 @@ NodeJS와 React 기반 사진 다이어리 웹 사이트 AWS의 리소스들을 
 
 ### System Architecture  
 
+**EKS**
+
 ![image](./manifest/arc.gif)  
+
+**CI/CD**
+
+![image](./manifest/cd1.png)  
+![image](./manifest/cd2.png)    
+![image](./manifest/cd3.png)  
+
 
 
 ### 인원 및 역할
 - 총원 5명 
-- 역할 : EKS 활용 LogLand 서비스, Terraform으로 AWS 리소스 프로비저닝, WhaTap 활용 모니터링
+- 역할 : EKS, Terraform, WhaTap
 
 ### 상세 역할
 
 **< part (1) : EKS 활용 LogLand 서비스 >**  
-   - 
-
+   - EKS Deployment Test Manifest 작성 및 Application 연동
+   - Helm 활용 EKS 클러스터 외부 ADD-ON(ALB-Controller, ExternalDNS, Metric-Server, ArgoCD) 설치 
 **< part (2) : Terraform으로 리소스 프로비저닝 >**
-   - FastAPI에서 뉴스 주제, 키워드 검색시 요약문을 반환하는 api 생성
-   - Raspberry Pi4에서 만들어진 api 호출 후 response된 요약문 tts로 출력하는 함수 생성  
+   - VPC, Cloudfront, 
+   - module활용 EKS 및 외부 ADD-ON 설치  
 
-
-
+**< part (3) : WhaTap 모니터링 >**
+   - WhaTap 에이전트 활용 EKS 리소스 모니터링
+   - NodeJS 어플리케이션 모니터링
+   - 
 # 프로젝트 결과
 
 ## AI-Speaker & NewsSum 시연 영상 (썸네일 Click!)
