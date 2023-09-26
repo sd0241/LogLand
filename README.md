@@ -50,7 +50,7 @@ NodeJS와 React 기반 사진 다이어리 웹 사이트 AWS의 리소스들을 
 **CD WorkFlow**
 ![image](./manifest/cd3.png)  
 
-**Moitoring**
+**Monitoring**
 ![image](./manifest/mon.png)  
 
 **Security**
