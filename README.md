@@ -79,10 +79,20 @@ NodeJS와 React 기반 사진 다이어리 웹 사이트 AWS의 리소스들을 
      
 # 프로젝트 결과
 
-## AI-Speaker & NewsSum 시연 영상 (썸네일 Click!)
-[![mv](https://img.youtube.com/vi/i5SYENVIA4M/hqdefault.jpg)](https://www.youtube.com/watch?v=i5SYENVIA4M)
-[![web](https://img.youtube.com/vi/gvhjLhK6EMc/hqdefault.jpg)](https://www.youtube.com/watch?v=gvhjLhK6EMc)
+## LogLand시연 영상 (썸네일 Click!)
 
+### Application
+**Login**
+[![login](https://img.youtube.com/vi/Han3knM1W84/hqdefault.jpg)](https://www.youtube.com/watch?v=Han3knM1W84)
+
+**Map, TimeLine**
+[![APP](https://img.youtube.com/vi/JG5OASr603Q/hqdefault.jpg)](https://www.youtube.com/watch?v=JG5OASr603Q)
+
+**CI/CD**
+[![CICD](http://img.youtube.com/vi/Og8pOjmW4Fc/hqdefault.jpg)](https://www.youtube.com/watch?v=Og8pOjmW4Fc)
+
+**Stress Test**
+[![Test](https://img.youtube.com/vi/6wHheYKFk8Q/hqdefault.jpg)](https://www.youtube.com/watch?v=6wHheYKFk8Q)
 
 ### 개선 사항 
 - Stress Test 시 단순 HTTP 접속 테스트밖에 하지 못했음
