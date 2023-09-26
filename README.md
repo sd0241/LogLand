@@ -55,9 +55,9 @@ NodeJS와 React 기반 사진 다이어리 웹 사이트 AWS의 리소스들을 
 
 
 ### 개선 사항 
-- Stress Test 시 단순 HTTP 접속 테스트밖에 하지 못한점
+- Stress Test 시 단순 HTTP 접속 테스트밖에 하지 못했음
 - Kakao Login 밖에 구현하지 못한점(Cognito를 사용하지 않은 점)
 - 다양한 Trouble Shooting을 경험해보지 못한 점
-- 로깅, 모니터링 관련 깊이있는 작업 및 협업을 하지 못한 점
+- 로깅 및 모니터링에 대한 이해 부족으로 해당 부분을 깊이있게 하지는 못함
 - ElastiCache를 Terraform으로 프로비저닝까지 했으나 시간 부족으로 연동하지 못했음
 - Jira를 깊게 활용하지 못하고 Confluence도 써보지 못함(Notion으로 대체)
