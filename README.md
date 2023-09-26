@@ -5,7 +5,7 @@
  2022.5.2.~2022.6.7.  
  
 ### 내용   
-NodeJS와 React 기반 사진 다이어리 웹 사이트를 AWS의 리소스들을 사용해 서비스 및 Terraform으로 프로비저닝
+NodeJS와 React 기반 사진 다이어리 웹 사이트 AWS의 리소스들을 사용해 서비스 및 Terraform으로 프로비저닝
  
  ### 상세 과정
  
@@ -34,6 +34,7 @@ NodeJS와 React 기반 사진 다이어리 웹 사이트를 AWS의 리소스들�
 - 역할 : EKS 활용 LogLand 서비스, Terraform으로 AWS 리소스 프로비저닝
 
 ### 상세 역할
+
 **< part (1) : EKS 활용 LogLand 서비스 >**  
    - 
    - 크롤링 한 뉴스 기사 원문 데이터 KoBART로 모델링 후 요약문 생성 
