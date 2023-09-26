@@ -9,16 +9,16 @@ NodeJS와 React 기반 사진 다이어리 웹 사이트 AWS의 리소스들을 
  
  ### 상세 과정
  
-1. 뉴스 기사 크롤링  
-   a. 연예,스포츠,정치등 6개 분야 네이버 뉴스 메인페이지에 있는 순서로(중복 제거) 6개씩 30분마다 크롤링(beautifulsoup4)   
-   b. ‘xxx 키워드 검색‘ 입력시 xxx를 검색 후 관련 뉴스 크롤링(Selenium)    
-2. 크롤링한 뉴스 기사 전처리 후 Kobart 모델링 후 요약기사 생성 
-3. 기사 본문, 언론사, 요약 뉴스등 7개의 정보 RDS(mariadb)에 적재 
-4. FastAPI로 뉴스 주제 음성 입력시 해당 주제 뉴스 기사 요약문 3개 or 검색하고 싶은 키워드 음성 입력시 해당 기사 요약문 1개를 response 하는 api 생성 
-5. 라즈베리파이 4에 해당 api 호출 함수 생성 
-6. 요약 뉴스 TTS 출력 
-7. HTML & CSS 활용 FastAPI 웹 페이지 구현
- 
+1. Node JS 및 React 어플리케이션 개발
+   a. 타임라인 및 로그인, 구글 맵 기능 구현  
+   b. 사용자 데이터 -> RDS, 사진 업로드 데이터 -> S3     
+2. Terraform으로 리소스 프로비저닝(EKS, VPC, CloudFront, CloudWatch, RDS...)
+3. CloudFront 활용 S3 및 ALB 캐싱
+4. EKS 활용 어플리케이션 컨테이너화
+5. CloudWatch, WhaTap으로 모니터링
+6. Github Actions와 ArgoCD 활용 CI/CD
+7. WAF 활용 Application 보안
+
 ### 사용 기술 stack
  
  ![image](./test_code1/stack.png)
@@ -31,21 +31,18 @@ NodeJS와 React 기반 사진 다이어리 웹 사이트 AWS의 리소스들을 
 
 ### 인원 및 역할
 - 총원 5명 
-- 역할 : EKS 활용 LogLand 서비스, Terraform으로 AWS 리소스 프로비저닝
+- 역할 : EKS 활용 LogLand 서비스, Terraform으로 AWS 리소스 프로비저닝, WhaTap 활용 모니터링
 
 ### 상세 역할
 
 **< part (1) : EKS 활용 LogLand 서비스 >**  
-   - 크롤링 한 뉴스 기사 원문 데이터 KoBART로 모델링 후 요약문 생성 
-   - 크롤링한 데이터 + 요약문 RDS에 적재
+   - 
 
-**< part (2) : Raspberry Pi4 ↔ API 서버 연동 및 스피커 서비스 구현 >**
+**< part (2) : Terraform으로 리소스 프로비저닝 >**
    - FastAPI에서 뉴스 주제, 키워드 검색시 요약문을 반환하는 api 생성
    - Raspberry Pi4에서 만들어진 api 호출 후 response된 요약문 tts로 출력하는 함수 생성  
 
-**< part (3) : 웹 서버 생성 및 배포 >**
-   - EC2 생성 후 서버 환경 구축
-   - FastAPI로 만든 웹페이지 및 API AWS route53으로 도메인 등록 후 nginx로 배포
+
 
 # 프로젝트 결과
 
